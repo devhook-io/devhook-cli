@@ -1,5 +1,5 @@
 {
-  "name": "devhook",
+  "name": "devhook-cli",
   "description": "Devhook CLI Tool to proxy webhook data",
   "version": "2.0.0",
   "author": "Sutton May",

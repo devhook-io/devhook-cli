@@ -1,7 +1,6 @@
-devhook
-=======
+# devhook
 
-Devhook CLI Tool to proxy webhook data
+Devhook CLI Tool to proxy webhook data via devhook.io
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/devhook.svg)](https://npmjs.org/package/devhook)
@@ -9,24 +8,29 @@ Devhook CLI Tool to proxy webhook data
 [![License](https://img.shields.io/npm/l/devhook.svg)](https://github.com/devhook-io/devhook-cli-js/blob/master/package.json)
 
 <!-- toc -->
+* [devhook](#devhook)
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
 ```sh-session
-$ npm install -g devhook
+$ npm install -g devhook-cli
 $ devhook COMMAND
 running command...
 $ devhook (-v|--version|version)
-devhook/2.0.0 darwin-x64 node-v14.15.0
+devhook-cli/2.0.0 darwin-x64 node-v14.15.0
 $ devhook --help [COMMAND]
 USAGE
   $ devhook COMMAND
 ...
 ```
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
 * [`devhook help [COMMAND]`](#devhook-help-command)
 * [`devhook login`](#devhook-login)
@@ -51,7 +55,7 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2
 
 ## `devhook login`
 
-Authenticate your machine with Devhook
+Authenticate your machine with Devhook. Will need an existing Devhook account
 
 ```
 USAGE
@@ -62,7 +66,7 @@ _See code: [src/commands/login.js](https://github.com/devhook-io/devhook-cli-js/
 
 ## `devhook monitor`
 
-Select the webhook you would like to monitor
+Receive and forward webhook events for the webhook you select
 
 ```
 USAGE
