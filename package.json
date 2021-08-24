@@ -6,7 +6,7 @@
   "bin": {
     "devhook": "./bin/run"
   },
-  "bugs": "https://github.com/devhook-io/devhook-cli-js/issues",
+  "bugs": "https://github.com/devhook-io/devhook-cli/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -40,7 +40,7 @@
     "/oclif.manifest.json",
     "/src"
   ],
-  "homepage": "https://github.com/devhook-io/devhook-cli-js",
+  "homepage": "https://github.com/devhook-io/devhook-cli",
   "keywords": [
     "oclif"
   ],
@@ -56,7 +56,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "devhook-io/devhook-cli-js",
+  "repository": "devhook-io/devhook-cli",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint .",
