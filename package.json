@@ -1,0 +1,67 @@
+{
+  "name": "devhook",
+  "description": "Devhook CLI Tool to proxy webhook data",
+  "version": "2.0.0",
+  "author": "Sutton May",
+  "bin": {
+    "devhook": "./bin/run"
+  },
+  "bugs": "https://github.com/devhook-io/devhook-cli-js/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "axios": "^0.21.1",
+    "chalk": "^4.1.2",
+    "cli-ux": "^5.6.3",
+    "fs-extra": "^10.0.0",
+    "human-readable-ids": "^1.0.4",
+    "open": "^8.2.1",
+    "path": "^0.12.7",
+    "phoenix-channels": "^1.0.0",
+    "prompts": "^2.4.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
+    "chai": "^4",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "globby": "^10",
+    "mocha": "^5",
+    "nyc": "^14"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/devhook-io/devhook-cli-js",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "hooks": {
+      "init": "./src/hooks/init"
+    },
+    "bin": "devhook",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "devhook-io/devhook-cli-js",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "eslint .",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
