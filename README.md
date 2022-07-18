@@ -21,7 +21,7 @@ $ npm install -g devhook-cli
 $ devhook COMMAND
 running command...
 $ devhook (-v|--version|version)
-devhook-cli/2.1.0 darwin-x64 node-v14.15.0
+devhook-cli/2.1.1 darwin-x64 node-v14.15.0
 $ devhook --help [COMMAND]
 USAGE
   $ devhook COMMAND
