@@ -10,7 +10,8 @@ const { Socket } = require("phoenix-channels");
 class MonitorCommand extends Command {
   startMonitor(room, config) {
     let activeWebhook = {};
-    let socket = new Socket(`${config.host}/socket`, {
+    console.log(config.socketHost)
+    let socket = new Socket(`${config.socketHost}/socket`, {
       params: { token: config.accessToken },
     });
     socket.connect();
@@ -46,7 +47,7 @@ class MonitorCommand extends Command {
       })
       .catch((err) => {
         this.logResult(
-          chalk.red.bold(`${err.response.status} 👎`),
+          chalk.red.bold(`${err.response?.status} 👎`),
           event,
           webhook
         );

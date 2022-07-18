@@ -6,9 +6,11 @@ module.exports = async function (options) {
     path.join(this.config.configDir, "config.json"),
     {
       host: "https://api.devhook.io",
+      socketHost: "wss://api.devhook.io/",
       clientId: "wG8nB4q0WcGULFfViov4hWSAObduNpKe",
       audience: "https://api.devhook.io",
     },
-    { flag: "w+" }
-  );
+    { flag: "wx" }
+  )
+  .catch((e) => {} /* shhhhhh */);
 };
