@@ -52,7 +52,6 @@ class Login extends Command {
         verified = true;
         cli.action.stop(chalk.green("✅ successful login!"));
         config.accessToken = res.data.access_token;
-        console.log(config.accessToken)
         await fs.writeJSON(
           path.join(this.config.configDir, "config.json"),
           config
