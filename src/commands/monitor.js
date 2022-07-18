@@ -27,7 +27,7 @@ class MonitorCommand extends Command {
       .receive("ok", ({ webhook }) => {
         activeWebhook = webhook;
         this.log(
-          `Ready! 👂 Listening at http://localhost:4000/webhooks/${webhook.uid}`
+          `Ready! 👂 Listening at http://api.devhook.io/webhooks/${webhook.uid}`
         );
       })
       .receive("error", (resp) => {

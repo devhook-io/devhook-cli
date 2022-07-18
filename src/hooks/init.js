@@ -5,9 +5,9 @@ module.exports = async function (options) {
   await fs.outputJson(
     path.join(this.config.configDir, "config.json"),
     {
-      host: "http://localhost:4000",
-      clientId: "GFyXdPPyXPdzquBZ4sK9puKvUKksZl9F",
-      audience: "https://devhook.io",
+      host: "https://api.devhook.io",
+      clientId: "wG8nB4q0WcGULFfViov4hWSAObduNpKe",
+      audience: "https://api.devhook.io",
     },
     { flag: "wx" }
   );

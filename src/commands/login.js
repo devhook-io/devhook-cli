@@ -65,8 +65,6 @@ class Login extends Command {
     const config = await fs.readJSON(
       path.join(this.config.configDir, "config.json")
     );
-
-    this.log(`hello from ./src/commands/hello.js`);
     await this.generateCode(config);
   }
 }
