@@ -9,6 +9,6 @@ module.exports = async function (options) {
       clientId: "wG8nB4q0WcGULFfViov4hWSAObduNpKe",
       audience: "https://api.devhook.io",
     },
-    { flag: "wx" }
+    { flag: "w+" }
   );
 };
